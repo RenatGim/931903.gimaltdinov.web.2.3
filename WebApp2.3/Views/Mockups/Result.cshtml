@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Quiz";
+    int num = 1;
+}
+
+<div>
+    <h1>Result</h1>
+    <h3> Right answers @ViewBag.RightAnswersCount out of @ViewBag.AnswersCount</h3>
+
+    @foreach (string result in ViewBag.Results)
+    {
+        <p>@(num++). @result</p>
+    }
+</div>
